@@ -114,35 +114,7 @@ const MenuPage: React.FC = () => {
       <div className="menu-bg-decoration"></div>
 
       {/* Header */}
-      <header className="menu-header">
-        <div className="container">
-          <div className="menu-header-content">
-            <div className="logo" onClick={() => navigate('/')}>
-              <div className="logo-icon">🍔</div>
-              <span className="logo-text">Re-Eat FastFood</span>
-            </div>
 
-            <nav className="menu-nav">
-              <a href="#" onClick={() => navigate('/')} className="nav-link">Home</a>
-              <a href="#" className="nav-link active">Menu</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); }} className="nav-link">About</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="nav-link">Contact</a>
-            </nav>
-
-            <div className="menu-header-actions">
-              <button className="cart-icon-btn" onClick={() => setIsCartOpen(true)}>
-                <span className="cart-emoji">🛒</span>
-                {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-              </button>
-              <button className="cart-button" onClick={() => setIsCartOpen(true)}>
-                <ShoppingCart size={20} />
-                <span>Cart</span>
-                {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Main Content */}
       <main className="menu-main">

@@ -978,3 +978,33 @@ body {
 .cart-items::-webkit-scrollbar-thumb:hover {
   background: #FF5722;
 }
+.cart-checkout-btn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 16px;
+
+  border: none;
+  border-radius: 26px;
+
+  background: linear-gradient(135deg, #ff6b35, #ff8c42);
+  color: #fff;
+
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 10px 22px rgba(255, 107, 53, 0.35);
+}
+
+.cart-checkout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(255, 107, 53, 0.45);
+}
+
+.cart-checkout-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(255, 107, 53, 0.35);
+}
