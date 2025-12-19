@@ -531,3 +531,30 @@
 .order-card:nth-child(3) {
   animation-delay: 0.2s;
 }
+.status-pending {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.status-confirmed,
+.status-preparing {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.status-delivery {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.view-order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
