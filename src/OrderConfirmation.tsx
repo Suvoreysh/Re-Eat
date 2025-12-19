@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import { CheckCircle, Download, Printer, Home, ArrowLeft } from "lucide-react";
 import { useAuth } from "./context/AuthContext";
 
-const API = "http://localhost:5000";
+const API = "https://re-eat-backend.onrender.com";
 
 interface OrderItem {
   name: string;

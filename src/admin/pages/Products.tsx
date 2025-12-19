@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import ProductForm from "./ProductForm";
 
-const API = "http://localhost:5000";
+const API = "https://re-eat-backend.onrender.com";
 
 interface Category {
   _id: string;

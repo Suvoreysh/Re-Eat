@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-const API = "http://localhost:5000/api";
+const API = "https://re-eat-backend.onrender.com/api";
 
 interface Category {
   _id: string;
@@ -63,7 +63,7 @@ const ProductForm = ({ initialData, categories, onSuccess }: ProductFormProps) =
 
       setIngredients(initialData.ingredients || []);
       setPreview(
-        initialData.image ? `http://localhost:5000${initialData.image}` : null
+        initialData.image ? `https://re-eat-backend.onrender.com${initialData.image}` : null
       );
     }
   }, [initialData]);

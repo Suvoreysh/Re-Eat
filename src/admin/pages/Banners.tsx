@@ -3,7 +3,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import BannerForm from "./BannerForm";
 
-const API = "http://localhost:5000";
+const API = "https://re-eat-backend.onrender.com";
 
 interface Banner {
   _id: string;

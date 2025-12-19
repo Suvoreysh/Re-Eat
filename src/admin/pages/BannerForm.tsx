@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-const API = "http://localhost:5000/api";
+const API = "https://re-eat-backend.onrender.com/api";
 
 type BannerFormProps = {
   initialData?: any;
@@ -40,7 +40,7 @@ const BannerForm = ({ initialData, onSuccess }: BannerFormProps) => {
 
       setPreview(
         initialData.image
-          ? `http://localhost:5000${initialData.image}`
+          ? `https://re-eat-backend.onrender.com${initialData.image}`
           : null
       );
     }

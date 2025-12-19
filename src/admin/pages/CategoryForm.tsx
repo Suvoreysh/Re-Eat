@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
-const API = "http://localhost:5000/api";
+const API = "https://re-eat-backend.onrender.com/api";
 
 type CategoryFormProps = {
   initialData?: any;
@@ -39,7 +39,7 @@ const CategoryForm = ({ initialData, onSuccess }: CategoryFormProps) => {
 
       setPreview(
         initialData.image
-          ? `http://localhost:5000${initialData.image}`
+          ? `https://re-eat-backend.onrender.com${initialData.image}`
           : null
       );
     }

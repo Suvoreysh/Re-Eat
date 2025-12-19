@@ -3,7 +3,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import { useAuth } from './context/AuthContext';
 
-const API = 'http://localhost:5000';
+const API = 'https://re-eat-backend.onrender.com';
 
 export interface CartItem {
   id: string | number;

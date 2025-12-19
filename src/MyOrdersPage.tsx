@@ -7,7 +7,7 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 import './MyOrdersPage.css';
 
-const API = "http://localhost:5000";
+const API = "https://re-eat-backend.onrender.com";
 
 interface OrderItem {
   name: string;

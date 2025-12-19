@@ -15,7 +15,7 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import "./CheckoutPage.css";
 
-const API = "http://localhost:5000";
+const API = "https://re-eat-backend.onrender.com";
 
 const CheckoutPage: React.FC = () => {
   const navigate = useNavigate();
