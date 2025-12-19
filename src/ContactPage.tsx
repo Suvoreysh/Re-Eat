@@ -44,35 +44,7 @@ const ContactPage: React.FC = () => {
       <div className="contact-bg-decoration"></div>
 
       {/* Header */}
-      <header className="contact-header">
-        <div className="container">
-          <div className="contact-header-content">
-            <div className="logo" onClick={() => navigate('/')}>
-              <div className="logo-icon">🍔</div>
-              <span className="logo-text">Re-Eat FastFood</span>
-            </div>
-
-            <nav className="contact-nav">
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="nav-link">Home</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/menu'); }} className="nav-link">Menu</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about'); }} className="nav-link">About</a>
-              <a href="#" className="nav-link active">Contact</a>
-            </nav>
-
-            <div className="contact-header-actions">
-              <button className="cart-icon-btn">
-                <span className="cart-emoji">🛒</span>
-                {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-              </button>
-              <button className="cart-button">
-                <ShoppingCart size={20} />
-                <span>Cart</span>
-                {cartCount > 0 && <span className="cart-count-badge">{cartCount}</span>}
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+ 
 
       {/* Main Content */}
       <main className="contact-main">

@@ -56,45 +56,7 @@ const FoodDeliveryApp: React.FC = () => {
       <div className="bg-decoration bg-decoration-top"></div>
       <div className="bg-decoration bg-decoration-bottom"></div>
       
-      <header className="header">
-        <div className="container">
-          <div className="header-content">
-            <div className="logo">
-              <div className="logo-icon">🍔</div>
-              <span className="logo-text">Re-Eat FastFood</span>
-            </div>
-            
-            <nav className={`nav ${isMobileMenuOpen ? 'nav-open' : ''}`}>
-              <a href="#" className="nav-link active">Home</a>
-              <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); navigate('/menu'); }}>Menu</a>
-              <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); navigate('/about'); }}>About</a>
-              <a href="#" className="nav-link" onClick={(e) => { e.preventDefault(); navigate('/contact'); }}>Contact</a>
-            </nav>
-            
-            <div className="header-actions">
-              <button className="cart-icon-btn" onClick={() => setIsCartOpen(!isCartOpen)}>
-                <span className="cart-emoji">🛒</span>
-                {getTotalItems() > 0 && (
-                  <span className="cart-badge">{getTotalItems()}</span>
-                )}
-              </button>
-              <button className="cart-button" onClick={() => setIsCartOpen(!isCartOpen)}>
-                <ShoppingCart size={20} />
-                <span>Cart</span>
-                {getTotalItems() > 0 && (
-                  <span className="cart-count">{getTotalItems()}</span>
-                )}
-              </button>
-              <button 
-                className="mobile-menu-btn"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                <MenuIcon size={24} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+    
 
       <section className="hero">
         <div className="container">

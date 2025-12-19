@@ -1,0 +1,205 @@
+/* ===============================
+   AUTH MODAL OVERLAY
+================================ */
+
+.auth-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===============================
+   AUTH MODAL CONTAINER
+================================ */
+
+.auth-modal {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    position: relative;
+    animation: authFadeIn 0.35s ease;
+}
+
+/* ===============================
+   CLOSE BUTTON
+================================ */
+
+.auth-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.auth-close:hover {
+    color: #FF6B35;
+}
+
+/* ===============================
+   AUTH TABS
+================================ */
+
+.auth-tabs {
+    display: flex;
+    background: #FFF3E0;
+    border-radius: 14px;
+    padding: 6px;
+    margin-bottom: 26px;
+}
+
+.auth-tabs button {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.auth-tabs button.active {
+    background: white;
+    color: #FF6B35;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+   AUTH FORM
+================================ */
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Inputs & Selects */
+.auth-form input,
+.auth-form select {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.auth-form input::placeholder {
+    color: #999;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+    border-color: #FF6B35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.15);
+}
+
+/* ===============================
+   SUBMIT BUTTON
+================================ */
+
+.auth-form button {
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    background: #FF6B35;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+    background: #FF5722;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 107, 53, 0.4);
+}
+
+/* ===============================
+   HELPER & ERROR TEXT
+================================ */
+
+.auth-helper {
+    font-size: 13px;
+    color: #777;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.auth-error {
+    background: #ffebee;
+    color: #f44336;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ===============================
+   LOGIN BUTTON (HEADER)
+================================ */
+
+.login-button {
+    background: transparent;
+    border: 2px solid #FF6B35;
+    color: #FF6B35;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    background: #FF6B35;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+}
+
+/* ===============================
+   MOBILE STYLES
+================================ */
+
+@media (max-width: 480px) {
+    .auth-modal {
+        margin: 0 15px;
+        padding: 24px 20px;
+    }
+}
+
+/* ===============================
+   ANIMATION
+================================ */
+
+@keyframes authFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

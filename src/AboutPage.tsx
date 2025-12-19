@@ -15,35 +15,7 @@ const AboutPage: React.FC = () => {
       <div className="about-bg-decoration"></div>
 
       {/* Header */}
-      <header className="about-header">
-        <div className="container">
-          <div className="about-header-content">
-            <div className="logo" onClick={() => navigate('/')}>
-              <div className="logo-icon">🍔</div>
-              <span className="logo-text">Re-Eat FastFood</span>
-            </div>
-
-            <nav className="about-nav">
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/'); }} className="nav-link">Home</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/menu'); }} className="nav-link">Menu</a>
-              <a href="#" className="nav-link active">About</a>
-              <a href="#" onClick={(e) => { e.preventDefault(); navigate('/contact'); }} className="nav-link">Contact</a>
-            </nav>
-
-            <div className="about-header-actions">
-              <button className="cart-icon-btn">
-                <span className="cart-emoji">🛒</span>
-                {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
-              </button>
-              <button className="cart-button">
-                <ShoppingCart size={20} />
-                <span>Cart</span>
-                {cartCount > 0 && <span className="cart-count-badge">{cartCount}</span>}
-              </button>
-            </div>
-          </div>
-        </div>
-      </header>
+   
 
       {/* Main Content */}
       <main className="about-main">
